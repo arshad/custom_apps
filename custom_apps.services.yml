@@ -1,0 +1,6 @@
+services:
+  custom_apps.route_subscriber:
+    class: Drupal\custom_apps\Routing\RouteSubscriber
+    tags:
+        - { name: event_subscriber }
+    arguments: ['@apigee_kickstart.enhancer']

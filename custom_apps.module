@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_module().
+ */
+/**
+ * Implements hook_theme().
+ */
+function custom_apps_theme($existing, $type, $theme, $path) {
+  return [
+    'app_listing' => [
+      'variables' => ['apps' => NULL ],
+    ]
+  ];
+}

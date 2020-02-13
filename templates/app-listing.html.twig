@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Template for app listing.
+ */
+#}
+<ul class="app_listing">
+  {% for app in apps %}
+    <li>{{ app.label }}</li>
+  {% endfor %}
+</ul>
+
